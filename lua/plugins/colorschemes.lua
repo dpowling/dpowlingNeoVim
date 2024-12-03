@@ -1,3 +1,3 @@
 return {
-  "oxfist/night-owl.nvim",
+  "eldritch-theme/eldritch.nvim",
 }
