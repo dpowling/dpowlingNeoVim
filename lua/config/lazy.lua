@@ -14,6 +14,12 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Godot command things
+local pipepath = vim.fn.stdpath("cache") .. "/server.pipe"
+if not vim.loop.fs_stat(pipepath) then
+  vim.fn.serverstart(pipepath)
+end
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
