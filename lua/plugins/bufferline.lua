@@ -27,9 +27,7 @@ return {
           .. (diag.warning and icons.Warn .. diag.warning or "")
         return vim.trim(ret)
       end,
-      indicator = {
-        style = "underline",
-      },
+      separator_style = "slant",
       offsets = {
         {
           filetype = "neo-tree",
