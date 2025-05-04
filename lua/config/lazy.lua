@@ -28,7 +28,7 @@ require("lazy").setup({
       import = "lazyvim.plugins",
       opts = {
         -- colorscheme = "eldritch",
-        colorscheme = "tokyonight-storm",
+        colorscheme = "catppuccin-macchiato",
       },
     },
     -- import/override with your plugins
